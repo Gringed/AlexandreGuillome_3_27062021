@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Oh my food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gringed/AlexandreGuillome_3_27062021.git"
+  },
+  "author": "Gringe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gringed/AlexandreGuillome_3_27062021/issues"
+  },
+  "homepage": "https://github.com/Gringed/AlexandreGuillome_3_27062021#readme"
+}
