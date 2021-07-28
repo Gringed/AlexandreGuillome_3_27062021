@@ -15,101 +15,118 @@
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         
         <!--Fichier CSS-->
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/style.css">
 
         <title>OhMyFood</title>
     </head>
     <body>
-        <header id="top">
-            <div class="container">
-                    <div class="container__logo">
-                        <a href="index.html"><h1>OhMyFood</h1></a>
-                    </div>
-                    <div class="container__lieu">
-                        <p><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
-                    </div>
-            </div>  
-        </header>
-        <hr>
-        <section class="lead">
-            <div class="container">
-                <h2>Réservez le menu qui vous convient</h2>
-                <p class="descrip">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-                <br>
-                <a href="#" class="btn-rose">Explorez nos restaurants</a>
+        <header class="header">
+            <div class="header__logo">
+                <a href="index.html"><h1>ohmyfood</h1></a>
             </div>
-        </section>
-        <hr>
-        <section class="fonctionnement">
-            <h2>Fonctionnement</h2>
-            <ol>
-                <li><i class="fa fa-mobile"></i> Choisissez un restaurant</li>
-                <li><i class="fa fa-list"></i> Composez votre menu</li>
-                <li><i class="fa fa-store"></i> Dégustez au restaurant</li>
-            </ol>
-        </section>
-        <hr>
-        <section id="restaurants">
-            <div class="container">
-                <!--Hébergement à tel endroit-->
-                <div class="bloc-restaurant">
-                    <h2>Restaurants</h2>
-                    <div class="bloc-restaurant__content">
-                        <div class="bloc-restaurant__elements">
-                            <a href="./palette-gout.html">
-                                <div class="bloc-restaurant__cadre-photo">
-                                    <img src="img/restaurants/1.jpg" alt="La palette du goût" class="img-responsive"/>
-                                    <div class="new">
-                                        <p>Nouveau</p>
-                                    </div>
-                                </div>
-                                <h4>La palette du goût</h4>
-                                <p>Ménilmontant</p>
-                                <i class="fa fa-heart-o"></i>
-                            </a>
-                        </div>
-                        <div class="bloc-restaurant__elements">
-                            <a href="./note-enchantee.html">
-                                <div class="bloc-restaurant__cadre-photo">
-                                    <img src="img/restaurants/2.jpg" alt="La note enchantée" class="img-responsive"/>
-                                    <div class="new">
-                                        <p>Nouveau</p>
-                                    </div>
-                                </div>
-                                <h4>La note enchantée</h4>
-                                <p>Charonne</p>
-                                <i class="fa fa-heart-o"></i>
-                            </a>
-                        </div>
-                        <div class="bloc-restaurant__elements">
-                            <a href="./francaise.html">
-                                <div class="bloc-restaurant__cadre-photo">
-                                    <img src="img/restaurants/3.jpg" alt="A la française" class="img-responsive"/>
-                                </div>
-                                <h4>A la française</h4>
-                                <p>Cité Rouge</p>
-                                <i class="fa fa-heart-o"></i>
-                            </a>
-                        </div>
-                        <br>
-                        <div class="bloc-restaurant__elements">
-                            <a href="./delice-sens.html">
-                                <div class="bloc-restaurant__cadre-photo">
-                                    <img src="img/restaurants/4.jpg" alt="Le délice des sens" class="img-responsive"/>
-                                </div>
-                                <h4>Le délice des sens</h4>
-                                <p>Folie-Méricourt</p>
-                                <i class="fa fa-heart-o"></i>
-                            </a>
-                        </div>
-                    </div>   
+            <div class="header__lieu">
+                <p><i class="fas fa-map-marker-alt"></i>  Paris, Belleville</p>
+            </div>
+        </header>
+        
+        <section class="container">
+            <div class="lead">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p class="descrip">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <br>
+                <div class="btn btn-rose">
+                    Explorez nos restaurants
                 </div>
             </div>
         </section>
         <hr>
+        <section class="container">
+            <div class="fonctionnement">
+                <h2>Fonctionnement</h2>
+                <ul>
+                    <li>
+                        <span class="number">1</span>
+                        <i class="fa fa-mobile"></i> Choisissez un restaurant
+                    </li>
+                    <li>
+                        <span class="number">2</span>
+                        <i class="fa fa-list"></i> Composez votre menu
+                    </li>
+                    <li>
+                        <span class="number">3</span>
+                        <i class="fa fa-store full"></i> Dégustez au restaurant
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="container">
+            <!--Hébergement à tel endroit-->
+            <div class="bloc-restaurant">
+                <h2>Restaurants</h2>
+                <div class="bloc-restaurant__content">
+                    <div class="bloc-restaurant__elements">
+                        <a href="./palette-gout.html">
+                            <div class="bloc-restaurant__cadre-photo">
+                                <img src="img/restaurants/1.jpg" alt="La palette du goût" class="img-responsive"/>
+                                <div class="new">
+                                    <p>Nouveau</p>
+                                </div>
+                            </div>
+                            <h4>La palette du goût</h4>
+                            <p>Ménilmontant</p>
+                            <div class="heart">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bloc-restaurant__elements">
+                        <a href="./note-enchantee.html">
+                            <div class="bloc-restaurant__cadre-photo">
+                                <img src="img/restaurants/2.jpg" alt="La note enchantée" class="img-responsive"/>
+                                <div class="new">
+                                    <p>Nouveau</p>
+                                </div>
+                            </div>
+                            <h4>La note enchantée</h4>
+                            <p>Charonne</p>
+                            <div class="heart">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bloc-restaurant__elements">
+                        <a href="./francaise.html">
+                            <div class="bloc-restaurant__cadre-photo">
+                                <img src="img/restaurants/3.jpg" alt="A la française" class="img-responsive"/>
+                            </div>
+                            <h4>A la française</h4>
+                            <p>Cité Rouge</p>
+                            <div class="heart">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <div class="bloc-restaurant__elements">
+                        <a href="./delice-sens.html">
+                            <div class="bloc-restaurant__cadre-photo">
+                                <img src="img/restaurants/4.jpg" alt="Le délice des sens" class="img-responsive"/>
+                            </div>
+                            <h4>Le délice des sens</h4>
+                            <p>Folie-Méricourt</p>
+                            <div class="heart">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>   
+            </div> 
+        </section>
+        <hr>
         <!--Footer-->
-        <footer class="footer">
-            <div class="container">
+        <footer class="container">
+            <div class="footer">
                 <h1>Ohmyfood</h1>
                 <ul>
                     <li><a href="#"><i class="fa fa-utensils"></i> Proposer un restaurant</a></li>

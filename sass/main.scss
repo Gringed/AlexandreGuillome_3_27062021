@@ -1,22 +1,8 @@
 @import "./utils/variables";
-/* Partie générale du body */
-body
-{
-    font-family: Roboto, sans-serif;
-}
-.img-responsive
-{
-    max-width:100%;
-    height:auto;
-}
-.container
-{
-    display: inherit;
-    padding: 5px;
-    margin-right:auto;
-    margin-left:auto;
-}
-h1
-{
-    font-family: Shrikhand, sans-serif;
-}
+@import "./layout/container";
+@import "./utils/mixins";
+@import "./base/base";
+
+@import "./components/buttons";
+@import "./layout/header";
+@import "./layout/sections";
