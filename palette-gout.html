@@ -20,20 +20,17 @@
         <title>OhMyFood</title>
     </head>
     <body>
-        <header id="top">
-            <div class="container">
-                <div class="container__back">
-                    <a href="index.html"><h1><i class="fas fa-arrow-left"></i></h1></a>
-                </div>
-                <div class="container__logo">
-                    <a href="index.html"><h1>OhMyFood</h1></a>
-                </div>
-            </div>  
+        <header class="header-menu">
+            <div class="header-menu__back">
+                <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="header-menu__logo">
+                <a href="index.html"><h1>ohmyfood</h1></a>
+            </div> 
         </header>
         <div class="img-background">
             <img alt="La palette du goût" class="img-responsive" src="./img/restaurants/1.jpg">
         </div>
-        <hr>
         <section class="menu">
             <div class="menu__head">
                 <h1>La palette du goût</h1>
@@ -41,6 +38,7 @@
             </div>
             <div class="menu__content">
                 <h2>Entrées</h2>
+                <span class="menu__border"></span>
                 <div class="menu__elements">
                     <h2>Fricassé d'escargots</h2>
                     <p>Au piment d'espelette</p>
@@ -63,8 +61,10 @@
                     </span>
                 </div>
             </div>
+            <br>
             <div class="menu__content">
-                <h2>Plat</h2>
+                <h2>Plats</h2>
+                <span class="menu__border"></span>
                 <div class="menu__elements">
                     <h2>Filet de boeuf aux herbes</h2>
                     <p>Accompagné de sa ribambelle de légumes</p>
@@ -87,8 +87,10 @@
                     </span>
                 </div>
             </div>
+            <br>
             <div class="menu__content">
                 <h2>Desserts</h2>
+                <span class="menu__border"></span>
                 <div class="menu__elements">
                     <h2>Paris-Brest</h2>
                     <p>Revisité</p>
@@ -112,11 +114,11 @@
                 </div>
             </div>
         </section>
-        <hr>
-        <div class="btn">
+        
+        <div class="btn btn-menu">
             Commander
         </div>
-        <hr>
+        <br>
         <footer class="footer">
             <div class="container">
                 <h1>Ohmyfood</h1>

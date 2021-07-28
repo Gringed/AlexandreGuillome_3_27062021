@@ -18,3 +18,28 @@
         background: #0000000d;
     }
 }
+.header-menu
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: -10px 0 -10px 0;
+    &__back
+    {
+        padding: 15px;
+        & a
+        {
+            color: black;
+        }
+    }
+    &__logo
+    {
+        width: 80%;
+        & a
+        {
+            text-decoration: none;
+            font-size: small;
+            color: black;
+        }
+    }
+}
