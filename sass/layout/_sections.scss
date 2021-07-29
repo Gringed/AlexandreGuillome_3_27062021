@@ -119,12 +119,23 @@
         }
     }
 }
+.img-large
+{
+    height: 254px;
+    overflow: hidden;
+    & img
+    {
+        object-fit: cover;
+        position: relative;
+        top: -95px;
+    }
+}
 // MENU RESTAURANT
 .menu
 {
     border-radius: 30px;
     position: relative;
-    top: -40px;
+    top: -50px;
     background: $color-white;
     &__head
     {

@@ -70,11 +70,10 @@ h1 {
   color: black;
 }
 .header-menu__logo {
-  width: 80%;
+  width: 75%;
 }
 .header-menu__logo a {
   text-decoration: none;
-  font-size: small;
   color: black;
 }
 
@@ -182,10 +181,20 @@ h1 {
   font-weight: 500;
 }
 
+.img-large {
+  height: 254px;
+  overflow: hidden;
+}
+.img-large img {
+  object-fit: cover;
+  position: relative;
+  top: -95px;
+}
+
 .menu {
   border-radius: 30px;
   position: relative;
-  top: -40px;
+  top: -50px;
   background: white;
 }
 .menu__head {
