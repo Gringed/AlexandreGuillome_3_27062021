@@ -24,13 +24,14 @@
     align-items: center;
     text-align: center;
     margin: -10px 0 -10px 0;
+    justify-content: center;
     @media (min-width: 768px)
     {
         justify-content: center;
     }
     &__back
     {
-        padding: 15px;
+       
         & a
         {
             color: black;
@@ -39,6 +40,10 @@
     &__logo
     {
         width: 75%;
+        @media (min-width:768px)
+        {
+            width: 55%;
+        }
         & a
         {
             text-decoration: none;
@@ -52,5 +57,7 @@
     {
         position: fixed;
         opacity: 0.3;
+        height: -webkit-fill-available;
+        width: 100%;
     }
 }
