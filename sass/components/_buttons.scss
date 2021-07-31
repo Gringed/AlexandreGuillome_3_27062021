@@ -5,4 +5,8 @@
 .btn-menu
 {
     margin: 0 25% 30px 25%;
+    @media (min-width: 768px)
+    {
+        position: relative;
+    }
 }

@@ -24,6 +24,10 @@
     align-items: center;
     text-align: center;
     margin: -10px 0 -10px 0;
+    @media (min-width: 768px)
+    {
+        justify-content: center;
+    }
     &__back
     {
         padding: 15px;
@@ -40,5 +44,13 @@
             text-decoration: none;
             color: black;
         }
+    }
+}
+.img-background img
+{
+    @media (min-width: 768px)
+    {
+        position: fixed;
+        opacity: 0.3;
     }
 }

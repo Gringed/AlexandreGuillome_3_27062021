@@ -3,6 +3,11 @@
     background: #353535;
     color: $color-white;
     padding: 20px;
+    @media (min-width: 768px)
+    {
+        text-align: center;
+        position: relative;
+    }
     & h1
     {
         font-size: medium;

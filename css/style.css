@@ -39,6 +39,11 @@ h1 {
 .btn-menu {
   margin: 0 25% 30px 25%;
 }
+@media (min-width: 768px) {
+  .btn-menu {
+    position: relative;
+  }
+}
 
 .header {
   text-align: center;
@@ -63,6 +68,11 @@ h1 {
   text-align: center;
   margin: -10px 0 -10px 0;
 }
+@media (min-width: 768px) {
+  .header-menu {
+    justify-content: center;
+  }
+}
 .header-menu__back {
   padding: 15px;
 }
@@ -77,13 +87,30 @@ h1 {
   color: black;
 }
 
+@media (min-width: 768px) {
+  .img-background img {
+    position: fixed;
+    opacity: 0.3;
+  }
+}
+
 .lead {
   margin: 45px;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .lead {
+    margin: 0 20% 0 20%;
+  }
+}
 
 .fonctionnement {
   margin: 10px;
+}
+@media (min-width: 768px) {
+  .fonctionnement {
+    margin: 0 20% 0 20%;
+  }
 }
 .fonctionnement ul {
   padding: 0;
@@ -121,6 +148,11 @@ h1 {
 .bloc-restaurant {
   margin: 10px;
 }
+@media (min-width: 768px) {
+  .bloc-restaurant {
+    margin: 0 20% 0 20%;
+  }
+}
 .bloc-restaurant__elements {
   margin-bottom: 20px;
   border-radius: 20px;
@@ -138,8 +170,15 @@ h1 {
   right: 20px;
   font-size: x-large;
 }
+.bloc-restaurant__elements .heart i {
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.1em;
+}
 .bloc-restaurant__elements .heart i:hover {
   color: #9356DC;
+  font-weight: bold;
 }
 .bloc-restaurant__cadre-photo {
   height: 180px;
@@ -157,8 +196,9 @@ h1 {
 .bloc-restaurant__new {
   display: flex;
   position: relative;
+  float: right;
   top: -220px;
-  left: 250px;
+  right: 20px;
   background: #99E2D0;
   width: fit-content;
   padding: 0px 10px 0px 10px;
@@ -185,10 +225,22 @@ h1 {
   height: 254px;
   overflow: hidden;
 }
+@media (min-width: 768px) {
+  .img-large {
+    height: initial;
+  }
+}
 .img-large img {
   object-fit: cover;
   position: relative;
   top: -95px;
+}
+@media (min-width: 768px) {
+  .img-large img {
+    position: fixed;
+    opacity: 0.3;
+    top: initial;
+  }
 }
 
 .menu {
@@ -196,6 +248,11 @@ h1 {
   position: relative;
   top: -50px;
   background: white;
+}
+@media (min-width: 768px) {
+  .menu {
+    margin: 10% 20% 0 20%;
+  }
 }
 .menu__head {
   display: flex;
@@ -258,6 +315,12 @@ h1 {
   background: #353535;
   color: white;
   padding: 20px;
+}
+@media (min-width: 768px) {
+  .footer {
+    text-align: center;
+    position: relative;
+  }
 }
 .footer h1 {
   font-size: medium;
