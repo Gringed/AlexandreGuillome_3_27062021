@@ -103,7 +103,7 @@
         & img
         {
             border-radius: 20px 20px 0 0;
-            height: 230px;
+            max-height: 230px;
             width: fit-content;
             object-fit: cover;
             position: relative;
