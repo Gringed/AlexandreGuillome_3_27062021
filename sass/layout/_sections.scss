@@ -85,13 +85,15 @@
                 background-color: white;
                 border-radius: 50%;
                 padding:0.1em;
-                            
+                transition: all 500ms;
+                           
             }
             & i:hover
             {
                 color: $color-primary;
                 font-weight: bold;
-
+                transform-origin: 0% 50%;  
+                
             }
         }
     }
@@ -164,11 +166,35 @@
     }
 }
 // MENU RESTAURANT
+@-webkit-keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+}
 .menu
 {
     border-radius: 30px;
     position: relative;
-    top: -50px;
+    top: -5;
     background: $color-white;
     @media (min-width: 768px)
     {
@@ -193,6 +219,12 @@
     &__content
     {
         margin: 15px;
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
         & h2
         {
             font-size: 1.1rem;
@@ -232,8 +264,11 @@
         }
         &:hover
         {
+            & > .block__checked
+            {
             // ANIMATIONS CHECKED
             border: violet 1px solid;
+            }
         }
     }
     &__price

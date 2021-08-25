@@ -180,10 +180,12 @@ h1 {
   background-color: white;
   border-radius: 50%;
   padding: 0.1em;
+  transition: all 500ms;
 }
 .bloc-restaurant__elements .heart i:hover {
   color: #9356DC;
   font-weight: bold;
+  transform-origin: 0% 50%;
 }
 .bloc-restaurant__cadre-photo {
   height: 180px;
@@ -248,10 +250,34 @@ h1 {
   }
 }
 
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 .menu {
   border-radius: 30px;
   position: relative;
-  top: -50px;
+  top: -5;
   background: white;
 }
 @media (min-width: 768px) {
@@ -274,6 +300,12 @@ h1 {
 }
 .menu__content {
   margin: 15px;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 .menu__content h2 {
   font-size: 1.1rem;
@@ -306,7 +338,7 @@ h1 {
 .menu__elements p {
   margin: 0;
 }
-.menu__elements:hover {
+.menu__elements:hover > .block__checked {
   border: violet 1px solid;
 }
 .menu__price {
