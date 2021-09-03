@@ -106,6 +106,8 @@
         {
             border-radius: 20px 20px 0 0;
             max-height: 230px;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
             width: fit-content;
             object-fit: cover;
             position: relative;
@@ -120,6 +122,8 @@
         top: -220px;
         right: 20px;
         background: $color-tertiary;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         padding: 0px 10px 0px 10px;
         height: 30px;
