@@ -210,6 +210,7 @@
     border-radius: 30px;
     position: relative;
     background: $color-white;
+    margin-top: -50px;
     @media (min-width: 768px)
     {
         margin: 10% 20% 0 20%;
@@ -287,15 +288,14 @@
     }
     &__checked--circle
     {
-        
         position: relative;
-        top: 48%;
-        left: 45%;
+        top: 50%;
+        left: 55%;
         transform: translate(-20%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -55%);
         color: #fff;
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 20px;
         white-space: nowrap;
         overflow: hidden;
     }
@@ -317,6 +317,10 @@
         & p
         {
             margin: 0;
+            text-overflow: ellipsis;
+            width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
         }
         &:hover
         {
