@@ -343,7 +343,6 @@ h1 {
 .menu {
   border-radius: 30px;
   position: relative;
-  top: -5;
   background: white;
 }
 @media (min-width: 768px) {
