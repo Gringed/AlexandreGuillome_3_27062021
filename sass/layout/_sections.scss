@@ -173,25 +173,29 @@
 @-webkit-keyframes fadeInUp {
     0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    transition: cubic-bezier(.12,.54,.8,.25);
+    transition-delay: 1s;
     }
     100% {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+    
+    transition: cubic-bezier(.12,.54,.8,.25);
     }
     }
     @keyframes fadeInUp {
     0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    transition: cubic-bezier(.12,.54,.8,.25);
+    transition-delay: 1s;
     }
     100% {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+    
+    transition: cubic-bezier(.12,.54,.8,.25);
     }
 }
 @keyframes rotate
@@ -248,12 +252,7 @@
     &__content
     {
         margin: 15px;
-        -webkit-animation-name: fadeInUp;
-        animation-name: fadeInUp;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
+       
         & h2
         {
             font-size: 1.1rem;
@@ -306,6 +305,72 @@
         padding: 10px 10px 0 10px;
         margin: 15px 0 15px 0;
         position: relative;
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        &.first
+        {
+            -webkit-animation-delay: 0.2s;
+            -moz-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+        }
+        &.second
+        {
+            -webkit-animation-delay: 0.4s;
+            -moz-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+        }
+        &.third
+        {
+            -webkit-animation-delay: 0.6s;
+            -moz-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+        }
+        &.fourth
+        {
+            -webkit-animation-delay: 0.8s;
+            -moz-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+        }
+        &.fifth
+        {
+            -webkit-animation-delay: 1s;
+            -moz-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+        &.sixth
+        {
+            -webkit-animation-delay: 1.2s;
+            -moz-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+        }
+        &.seventh
+        {
+            -webkit-animation-delay: 1.4s;
+            -moz-animation-delay: 1.4s;
+            animation-delay: 1.4s;
+        }
+        &.height
+        {
+            -webkit-animation-delay: 1.6s;
+            -moz-animation-delay: 1.6s;
+            animation-delay: 1.6s;
+        }
+        &.nineth
+        {
+            -webkit-animation-delay: 1.8s;
+            -moz-animation-delay: 1.8s;
+            animation-delay: 1.8s;
+        }
+        &.ten
+        {
+            -webkit-animation-delay: 2s;
+            -moz-animation-delay: 2s;
+            animation-delay: 2s;
+        }
         & h2
         {
             font-size: 1.1rem;
